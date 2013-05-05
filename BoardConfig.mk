@@ -34,3 +34,16 @@ TARGET_KERNEL_CONFIG         := jf_spr_defconfig
 TARGET_KERNEL_VARIANT_CONFIG := jf_defconfig
 TARGET_KERNEL_SELINUX_CONFIG := jfselinux_defconfig
 
+# From OSRC Platform -----------------------
+HAVE_HTC_AUDIO_DRIVER := true
+BOARD_USES_GENERIC_AUDIO := true
+# Build OpenGLES emulation guest and host libraries
+BUILD_EMULATOR_OPENGL := true
+
+# Build and enable the OpenGL ES View renderer. When running on the emulator,
+# the GLES renderer disables itself if host GL acceleration isn't available.
+USE_OPENGL_RENDERER := true
+
+# Audio
+BOARD_USES_ALSA_AUDIO := true
+

@@ -21,13 +21,16 @@
 #
 
 # inherit from common D2
--include device/samsung/d2-common/BoardConfigCommon.mk
+-include device/samsung/jf-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
--include vendor/samsung/d2spr/BoardConfigVendor.mk
+-include vendor/samsung/jfltespr/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := d2spr,d2spi
+TARGET_OTA_ASSERT_DEVICE := jfltespr,jfltespi
 
 # Kernel
-TARGET_KERNEL_CONFIG    := cyanogen_d2spr_defconfig
+TARGET_KERNEL_CONFIG         := jf_spr_defconfig
+TARGET_KERNEL_VARIANT_CONFIG := jf_defconfig
+TARGET_KERNEL_SELINUX_CONFIG := jfselinux_defconfig
+

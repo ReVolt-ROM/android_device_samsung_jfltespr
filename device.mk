@@ -23,5 +23,5 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/jfltespr/overlay
 ## common overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/jf-common/overlay-cdma
 
-# Inherit from d2-common
+# Inherit from jf-common
 $(call inherit-product, device/samsung/jf-common/jf-common.mk)
